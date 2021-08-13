@@ -18,12 +18,15 @@ import	{ MatCardModule } from '@angular/material/card';
 import	{ MatTableModule } from '@angular/material/table';
 import	{ MatPaginatorModule } from '@angular/material/paginator';
 import	{MatSnackBarModule} from '@angular/material/snack-bar';
-	
+import { TarefaReadComponent } from './views/components/tarefa/tarefa-read/tarefa-read.component';	
 
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
 import { NavComponent } from './views/components/template/nav/nav.component';
 import { HomeComponent } from './views/components/home/home.component';
+import { RouterModule } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { HomeComponent } from './views/components/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    TarefaReadComponent
+
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,9 @@ import { HomeComponent } from './views/components/home/home.component';
     MatInputModule,
     MatDatepickerModule,
     MatPaginatorModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    RouterModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
